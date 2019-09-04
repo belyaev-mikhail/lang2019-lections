@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="13.208mm"
+   height="18.2118mm"
+   viewBox="0 0 13.208 18.2118"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="big_lambda.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.919596"
+     inkscape:cx="71.612805"
+     inkscape:cy="22.233282"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     fit-margin-top="0.5"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1171"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4555" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-30.808082,-39.340282)">
+    <g
+       aria-label="λ"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.23333311px;line-height:6.61458302px;font-family:'B&amp;H LucidaTypewriter';-inkscape-font-specification:'B&amp;H LucidaTypewriter, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="text4534">
+      <path
+         d="m 36.548482,39.340282 h -0.9906 c -1.2954,0.508 -1.8796,0.635 -3.5814,0.8636 v 0.7874 l 0.508,0.0508 c 2.4384,0.2286 2.5654,0.3048 3.1242,2.0828 l 1.1684,3.4544 -3.8354,8.128 c -0.8636,1.905 -0.9906,2.0066 -2.1336,2.1082 v 0.7366 h 4.9022 v -0.7366 h -0.6096 c -0.7366,0 -1.1176,-0.254 -1.1176,-0.7366 0,-0.3048 0.127,-0.8382 0.3556,-1.3462 l 2.921,-6.8072 2.54,7.0866 c 0.1778,0.5588 0.254,0.8382 0.254,1.0922 0,0.5334 -0.3556,0.7112 -1.3716,0.7112 h -0.3556 v 0.7366 h 5.6896 v -0.7366 c -1.0414,-0.0508 -1.4732,-0.4572 -2.0066,-1.9812 z"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:25.39999962px;font-family:'URW Bookman';-inkscape-font-specification:'URW Bookman, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332px"
+         id="path815" />
+    </g>
+  </g>
+</svg>

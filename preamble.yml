@@ -1,0 +1,9 @@
+---
+lang: ru-RU
+theme: metropolis
+colortheme: rose
+classoption: t
+shorttitle: "Functional programming"
+graphics: true
+graphicspath: "fig/"
+---
