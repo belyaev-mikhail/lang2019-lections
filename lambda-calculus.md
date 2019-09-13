@@ -92,7 +92,7 @@ $\lambda\,x . \lambda\,y . f\,y\,x$
 
 $(\lambda\,x . \lambda y . f\,y\,x) a\,b \rightarrow$  
 $(\lambda\,y . f\,y\,a) b \rightarrow$  
-$f\,a\,b$
+$f\,b\,a$
 
 ## Шаг в сторону: каррирование
 
