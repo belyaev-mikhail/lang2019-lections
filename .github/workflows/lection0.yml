@@ -1,4 +1,4 @@
-name: Pandoc CI
+name: Pandoc CI Lection 0
 
 on: push
 
