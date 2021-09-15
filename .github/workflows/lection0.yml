@@ -15,7 +15,7 @@ jobs:
             -t beamer+smart 
             --pdf-engine xelatex 
             --include-in-header=preamble.tex 
-		        --metadata-file=preamble.yml 
+            --metadata-file=preamble.yml 
             --output lection0.tex 
             lection0.md
       - uses: actions/checkout@v2
