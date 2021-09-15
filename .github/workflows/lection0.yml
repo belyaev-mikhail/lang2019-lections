@@ -1,0 +1,38 @@
+name: Pandoc CI
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: mkdir output
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: >
+            --standalone 
+            -t beamer+smart 
+            --pdf-engine xelatex 
+            --include-in-header=preamble.tex 
+		        --metadata-file=preamble.yml 
+            --output lection0.tex 
+            lection0.md
+      - uses: actions/checkout@v2
+        with:
+          repository: mozilla/Fira
+          ref: '4.106'
+          path: fonts
+      - uses: xu-cheng/latex-action@v2
+        with:
+          args: >
+            -xelatex 
+            -latexoption=-file-line-error 
+            -latexoption=-interaction=nonstopmode
+          root_file: lection0.tex
+          post_compile: cp lection0.pdf output/
+          pre_compile: 'mkdir ~/.fonts && cp fonts/ttf/*.ttf ~/.fonts/ && fc-cache -fv'
+      - uses: actions/upload-artifact@master
+        with:
+          name: pdf
+          path: output/lection0.pdf
