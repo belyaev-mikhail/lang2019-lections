@@ -22,24 +22,21 @@ $$
 
 Функция:
 
+\vspace{-\baselineskip}
+
 $$
 A \xrightarrow{f} B
 $$
 
 Аппликативный функтор:
 
-$$
-\fbox{A} \xrightarrow{fmap(f)} \fbox{B}
-$$
+\vspace{-\baselineskip}
 
-
-$$
-A \xrightarrow{pure} \fbox{A}
-$$
-
-$$
-\fbox{A} \xrightarrow{\fbox{f} <*>} \fbox{B}
-$$
+\begin{align*}
+\fbox{A} &\xrightarrow{fmap(f)} \fbox{B} \\
+A &\xrightarrow{pure} \fbox{A} \\
+\fbox{A} &\xrightarrow{\fbox{f} <*>} \fbox{B}
+\end{align*}
 
 Законы: $pure(f) <*> x \equiv fmap(f)(x)$
 
@@ -47,24 +44,21 @@ $$
 
 Функция:
 
+\vspace{-1.3\baselineskip}
+
 $$
 A \xrightarrow{f} B
 $$
 
 Монада:
 
-$$
-\fbox{A} \xrightarrow{fmap(f)} \fbox{B}
-$$
+\vspace{-1.3\baselineskip}
 
-
-$$
-A \xrightarrow{return} \fbox{A}
-$$
-
-$$
-\fbox{\fbox{A}} \xrightarrow{flatten} \fbox{A}
-$$
+\begin{align*}
+\fbox{A} &\xrightarrow{fmap(f)} \fbox{B} \\
+A &\xrightarrow{return} \fbox{A} \\
+\fbox{\fbox{A}} &\xrightarrow{flatten} \fbox{A} \\
+\end{align*}
 
 Законы: $flatten(return(x)) \equiv x$ (ну и по мелочи...)
 
@@ -86,13 +80,10 @@ $$
 
 Монада (более короткий, но менее понятный, набор):
 
-$$
-A \xrightarrow{return} \fbox{A}
-$$
-
-$$
-\fbox{A} \xrightarrow{bind(g)} \fbox{B}
-$$
+\begin{align*}
+A &\xrightarrow{return} \fbox{A} \\
+\fbox{A} &\xrightarrow{bind(g)} \fbox{B} \\
+\end{align*}
 
 ## Классы типов: монада
 
@@ -544,23 +535,21 @@ instance Monad IO where
 
 Функция:
 
+\vspace{-1.3\baselineskip}
+
 $$
 \fbox{A} \xrightarrow{g} B
 $$
 
 Комонада:
 
-$$
-\fbox{A} \xrightarrow{extract} A
-$$
+\vspace{-1.3\baselineskip}
 
-$$
-\fbox{A} \xrightarrow{duplicate} \fbox{\fbox{A}}
-$$
-
-$$
-\fbox{A} \xrightarrow{extend(g)} \fbox{B}
-$$
+\begin{align*}
+\fbox{A} &\xrightarrow{extract} A \\
+\fbox{A} &\xrightarrow{duplicate} \fbox{\fbox{A}} \\
+\fbox{A} &\xrightarrow{extend(g)} \fbox{B} \\
+\end{align*}
 
 ## Что является монадой?
 
