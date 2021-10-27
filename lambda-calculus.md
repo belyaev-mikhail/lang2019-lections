@@ -32,10 +32,10 @@
 
 ## Принцип аппликации и абстракции
 
-Объявление функции --- лямбда-выражение  
+Объявление функции --- лямбда-выражение
 $\lambda\,x. F[x]$
 
-Функция, которая принимает аргумент (x) и возвращает его же:  
+Функция, которая принимает аргумент (x) и возвращает его же:
 $\lambda\,x. x$
 
 ## Принцип аппликации и абстракции
@@ -54,7 +54,7 @@ $\lambda\,x. x$
 
 ## Как происходит вычисление?
 
-$\alpha$-конверсия:  
+$\alpha$-конверсия:
 $\lambda\,x.M[x] \rightarrow \lambda\,y.M[y]$
 
 Альфа-конверсия всегда корректна для любого выражения, т.е. можно свободно переименовывать переменные в лямбдах:
@@ -65,7 +65,7 @@ $\lambda\,x.x (\lambda\,z.z\,x) \rightarrow \lambda\,y.y (\lambda\,z.z\,y)$
 
 ## Как происходит вычисление?
 
-$\beta$-редукция:  
+$\beta$-редукция:
 $(\lambda\,x.M[x]) y \rightarrow M[x := y]$
 
 (читать как "заменить все вхождения $x$ внутри $M$ на $y$")
@@ -83,15 +83,15 @@ $\lambda\,x\,y. f\,y\,x$
 
 . . .
 
-Это **ровно то же самое**, что и  
+Это **ровно то же самое**, что и
 $\lambda\,x . \lambda\,y . f\,y\,x$
 
 ## Шаг в сторону: каррирование
 
 В каком смысле то же самое?
 
-$(\lambda\,x . \lambda y . f\,y\,x) a\,b \rightarrow$  
-$(\lambda\,y . f\,y\,a) b \rightarrow$  
+$(\lambda\,x . \lambda y . f\,y\,x) a\,b \rightarrow$
+$(\lambda\,y . f\,y\,a) b \rightarrow$
 $f\,b\,a$
 
 ## Шаг в сторону: каррирование
@@ -120,8 +120,8 @@ $f\,b\,a$
 \texttt{if} &:= \lambda\,c\,t\,f.c\,t\,f
 \end{align*}
 
-$\texttt{if}\,\texttt{true}\,a\,b \rightarrow a$  
-$\texttt{if}\,\texttt{false}\,a\,b \rightarrow b$  
+$\texttt{if}\,\texttt{true}\,a\,b \rightarrow a$
+$\texttt{if}\,\texttt{false}\,a\,b \rightarrow b$
 
 ## Булеаны Чёрча
 
@@ -227,15 +227,15 @@ $\texttt{if}\,\texttt{false}\,a\,b \rightarrow b$
 ## Структуры данных: пары Чёрча
 
 \begin{align*}
-pair\,x\,y &\rightarrow \lambda\,f.f\,x\,y \\
-first (pair\,x\,y) &\rightarrow x \\
-second (pair\,x\,y) &\rightarrow y \\
+\texttt{pair}\,x\,y &\rightarrow \lambda\,f.f\,x\,y \\
+\texttt{first} (\texttt{pair}\,x\,y) &\rightarrow x \\
+\texttt{second} (\texttt{pair}\,x\,y) &\rightarrow y \\
 \end{align*}
 
 ## Другие структуры данных
 
 - Они не нужны
-- Пар достаточно для выражения любой сложносвязной структуры в стиле ФП  
+- Пар достаточно для выражения любой сложносвязной структуры в стиле ФП
   Списки Чёрча: список = ничего или пара из первого элемента и списка
 
 ## Что с циклами и/или рекурсией?
@@ -327,11 +327,45 @@ y &:= \lambda\,f.(\lambda\,x.f (x\,x)) (\lambda\,x.f (x\,x))
 
 - То, что мы рассмотрели сегодня --- это простое нетипизированное лямбда-исчисление
 - Соответственно, бывает ещё сложное и типизированное
-- Об этом --- как нибудь в другой раз
-- Альтернативные модели:
-  - $\mu$-рекурсивные функции
-  - Исчисление комбинаторов
-  - etc.
+
+## Исчисление комбинаторов (базис SKI)
+
+Есть три функции:
+
+\begin{align*}
+i &:= \lambda\,x.x \\
+k &:= \lambda\,x\,y.x \\
+s &:= \lambda\,x\,y\,z.(x\,z) (y\,z) \\
+\end{align*}
+
+Утверждается, что через эти три функции можно выразить любые другие.
+
+\pause
+
+На самом деле, их две: $i = s\,k\,k$
+
+## Исчисление комбинаторов (базис SKI)
+
+Утверждается, что через эти три функции можно выразить любые другие.
+
+\begin{align*}
+\omega &:= (s\,i\,i)(s\,i\,i) \\
+y &:= (s\,s\,k)((s\,(k\,(s\,s\,(s\,(s\,s\,k)))))\,k) \\
+\texttt{true} &:= k \\
+\texttt{false} &:= k\,i \\
+&\hdots
+\end{align*}
+
+>	Raymond Smullyan, To Mock a Mockingbird and Other Logic Puzzles: Including an Amazing Adventure in Combinatory Logic
+
+## Что ещё бывает
+
+- $\mu$-рекурсивные функции
+- Другие полные базисы (не SK)
+
+## В следующей серии
+
+- Будем учить этот ваш Хаскель!
 
 ##
 
