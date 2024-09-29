@@ -1,6 +1,5 @@
 % Pattern matching и функциональные комбинаторы
 % Михаил Беляев
-% \today
 
 ## Pattern matching
 
@@ -530,11 +529,4 @@ squareChar n =
 
 ##
 
-![](fig/haskell_logo.png){ width=60% }
-
-\vfill
-
-<http://kspt.icc.spbstu.ru/course/lang>
-<belyaev@kspt.icc.spbstu.ru>
-
-![](fig/kspt.svg){ height=1.5em } ![](fig/polytech_logo.eps){ height=1.5em }
+![](fig/haskell_logo.png){ width=40% } \hfill ![](fig/QR.svg){ width=40% }

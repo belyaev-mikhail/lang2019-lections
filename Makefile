@@ -18,7 +18,7 @@
 %.eps: %.svg
 	inkscape $*.svg -E $*.eps
 
-all: lection0.pdf lection1.pdf lection2.pdf lection3.pdf lection4.pdf lection5.pdf lection6.pdf lection7.pdf lection8.pdf lection9.pdf lection10.pdf
+all: lection0.pdf lection1.pdf lection2.pdf lection3.pdf lection4.pdf lection5.pdf lection6.pdf lection7.pdf lection8.pdf lection9.pdf lambda-calculus.pdf
 
 .PHONY: all
 

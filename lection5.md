@@ -1,6 +1,5 @@
 % Монады и do-синтаксис
 % Михаил Беляев
-% \today
 
 ## Абстракции вычислений
 
@@ -587,9 +586,4 @@ $$
 
 ![](fig/haskell_logo.png){ width=60% }
 
-\vfill
 
-<http://kspt.icc.spbstu.ru/course/lang>
-<belyaev@kspt.icc.spbstu.ru>
-
-![](fig/kspt.svg){ height=1.5em } ![](fig/polytech_logo.eps){ height=1.5em }

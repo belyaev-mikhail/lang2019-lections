@@ -1,6 +1,5 @@
 % Введение в язык Haskell
 % Михаил Беляев
-% \today
 
 ## Haskell
 
@@ -479,11 +478,4 @@ f(x); // f depends on x
 
 ##
 
-![](fig/haskell_logo.png){ width=60% } \hfill ![](fig/QR.svg){ width=20% }
-
-\vfill
-
-<http://kspt.icc.spbstu.ru/course/lang>
-<belyaev@kspt.icc.spbstu.ru>
-
-![](fig/kspt.svg){ height=1.5em } ![](fig/polytech_logo.eps){ height=1.5em }
+![](fig/haskell_logo.png){ width=40% } \hfill ![](fig/QR.svg){ width=40% }

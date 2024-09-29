@@ -120,8 +120,11 @@ $f\,b\,a$
 \texttt{if} &:= \lambda\,c\,t\,f.c\,t\,f
 \end{align*}
 
-$\texttt{if}\,\texttt{true}\,a\,b \rightarrow a$
-$\texttt{if}\,\texttt{false}\,a\,b \rightarrow b$
+\begin{align*}
+\texttt{if}\,\texttt{true}\,a\,b &\rightarrow a \\
+\texttt{if}\,\texttt{false}\,a\,b &\rightarrow b
+\end{align*}
+
 
 ## Булеаны Чёрча
 
@@ -369,11 +372,6 @@ y &:= (s\,s\,k)((s\,(k\,(s\,s\,(s\,(s\,s\,k)))))\,k) \\
 
 ##
 
-![](fig/haskell_logo.png){ width=60% } \hfill ![](fig/QR.svg){ width=20% }
+![](fig/haskell_logo.png){ width=40% } \hfill ![](fig/QR.svg){ width=40% }
 
-\vfill
 
-<http://kspt.icc.spbstu.ru/course/lang>
-<belyaev@kspt.icc.spbstu.ru>
-
-![](fig/kspt.svg){ height=1.5em } ![](fig/polytech_logo.eps){ height=1.5em }
